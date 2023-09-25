@@ -5,37 +5,37 @@ This project analyzes and visualizes the geographical distribution of Mars' crat
 The following project demonstrates the following skills: Data Collection and Pre-processing, Exploratory Data Analysis, Feature Engineering, Data Splitting and Predictive Modeling (using linear regression, ridge regression, and gradient boosting regression), Model Evaluation (using MAE and R^2), Model Enhancement, Interactive Data Visualization (creating interactive dashboards), Correlation Analysis, and Results Interpretation and Communication.
 
 ## Project Summary
-** Goals:**
+**Goals:**
 1. Analyze and visualize the geographical distribution of Mars' craters, focusing on named craters.
 2. Establish correlations among various features of the craters.
 3. Develop a predictive model to estimate the depth of the craters based on other features.
 
 ## Key Steps:
-** Data Collection and Pre-processing: **
+**Data Collection and Pre-processing:**
 * Acquired the Mars crater data, which included information about crater names, diameters, depths, and other related features.
 * Cleaned the dataset by handling missing values and performing necessary transformations.
 
-** Exploratory Data Analysis: **
+**Exploratory Data Analysis:**
 * Plotted the geographical distribution of named craters on Mars, using `plotly` to visualize longitude vs. latitude.
 * Examined the distribution of various categorical and integer features specific to named craters.
 
-** Feature Engineering and Modelling: **
+**Feature Engineering and Modelling:**
 * Replaced blank spaces in the dataset with NaN for proper handling.
 * Set up a data preprocessing pipeline that scaled numerical features and one-hot encoded categorical variables.
 * Split the data into training and test sets.
 * Trained a Linear Regression model to predict crater depth
 
-** Model Enhancement: **
+**Model Enhancement:**
 * Tested other models such as Ridge Regression and Gradient Boosting Regressor.
 * Utilized GridSearchCV for hyperparameter tuning for both the models.
 * Compared their performance to identify the best model based on the negative mean absolute error.
 
-** Interactive Data Visualization: **
+**Interactive Data Visualization:**
 Created two interactive dashboards using `Dash`:
 * Mars Crater Dashboard: Feature Comparison: This dashboard allows users to compare multiple features using a scatter matrix.
 * Mars Crater Dashboard: Feature Filtering: This dashboard enables users to filter craters based on various features and view them on a scatter plot.
 
-** Correlation Analysis: **
+**Correlation Analysis:**
 * Computed the correlation matrix to establish relationships between features.
 * Visualized the correlations using a heat-map.
 * Identified a moderately strong positive correlation between crater depth and diameter. 
